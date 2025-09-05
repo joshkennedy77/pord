@@ -84,25 +84,81 @@ export default function Page() {
           <p className="text-lg text-gray-600">Browse our collection of 3D-printed home designs</p>
         </div>
         
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {DESIGNS.map((d) => (
-            <article key={d.slug} className="card text-left">
-              <Link href={`/designs/${d.slug}`} className="block">
-                <Image
-                  src={d.img}
-                  alt={d.name}
-                  width={500}
-                  height={350}
-                  className="object-cover rounded-xl w-full h-auto"
-                />
-                <h3 className="mt-4 font-semibold">{d.name}</h3>
-              </Link>
-              <p className="mt-1 text-sm text-gray-600">${d.price.toLocaleString()}</p>
-              <div className="mt-4 flex gap-2">
-                <Link href={`/designs/${d.slug}`} className="btn-primary">View</Link>
-              </div>
-            </article>
-          ))}
+        <div className="grid gap-8 lg:grid-cols-3">
+          {/* Residential Column */}
+          <div>
+            <h3 className="text-2xl font-bold mb-6 text-center">Residential</h3>
+            <div className="space-y-6">
+              {DESIGNS.slice(0, 8).map((d) => (
+                <article key={d.slug} className="card text-left">
+                  <Link href={`/designs/${d.slug}`} className="block">
+                    <Image
+                      src={d.img}
+                      alt={d.name}
+                      width={500}
+                      height={350}
+                      className="object-cover rounded-xl w-full h-auto"
+                    />
+                    <h4 className="mt-4 font-semibold">{d.name}</h4>
+                  </Link>
+                  <p className="mt-1 text-sm text-gray-600">${d.price.toLocaleString()}</p>
+                  <div className="mt-4 flex gap-2">
+                    <Link href={`/designs/${d.slug}`} className="btn-primary">View</Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+          
+          {/* Commercial Column */}
+          <div>
+            <h3 className="text-2xl font-bold mb-6 text-center">Commercial</h3>
+            <div className="space-y-6">
+              {DESIGNS.slice(8, 16).map((d) => (
+                <article key={d.slug} className="card text-left">
+                  <Link href={`/designs/${d.slug}`} className="block">
+                    <Image
+                      src={d.img}
+                      alt={d.name}
+                      width={500}
+                      height={350}
+                      className="object-cover rounded-xl w-full h-auto"
+                    />
+                    <h4 className="mt-4 font-semibold">{d.name}</h4>
+                  </Link>
+                  <p className="mt-1 text-sm text-gray-600">${d.price.toLocaleString()}</p>
+                  <div className="mt-4 flex gap-2">
+                    <Link href={`/designs/${d.slug}`} className="btn-primary">View</Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+          
+          {/* Community Column */}
+          <div>
+            <h3 className="text-2xl font-bold mb-6 text-center">Community</h3>
+            <div className="space-y-6">
+              {DESIGNS.slice(16, 24).map((d) => (
+                <article key={d.slug} className="card text-left">
+                  <Link href={`/designs/${d.slug}`} className="block">
+                    <Image
+                      src={d.img}
+                      alt={d.name}
+                      width={500}
+                      height={350}
+                      className="object-cover rounded-xl w-full h-auto"
+                    />
+                    <h4 className="mt-4 font-semibold">{d.name}</h4>
+                  </Link>
+                  <p className="mt-1 text-sm text-gray-600">${d.price.toLocaleString()}</p>
+                  <div className="mt-4 flex gap-2">
+                    <Link href={`/designs/${d.slug}`} className="btn-primary">View</Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </div>
