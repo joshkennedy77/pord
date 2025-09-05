@@ -33,10 +33,10 @@ export default function Page() {
             <p className="text-gray-600 text-sm">Investment opportunities and project financing</p>
           </Link>
           
-          <Link href="/construction" className="card text-center hover:shadow-lg transition-shadow">
+          <Link href="/contractor-login" className="card text-center hover:shadow-lg transition-shadow">
             <div className="text-4xl mb-4">🏗️</div>
-            <h3 className="text-xl font-semibold mb-2">Construction / Engineering</h3>
-            <p className="text-gray-600 text-sm">Building partnerships and technology integration</p>
+            <h3 className="text-xl font-semibold mb-2">Contractors</h3>
+            <p className="text-gray-600 text-sm">Join our network and manage leads</p>
           </Link>
           
           <Link href="/homeowners" className="card text-center hover:shadow-lg transition-shadow">
