@@ -417,9 +417,9 @@ export default function HomeownersInformationPage() {
               {["Very urgent (within 1 month)", "Urgent (1-3 months)", "Moderate (3-6 months)", "Flexible (6+ months)", "Just exploring"].map((level) => (
                 <label
                   key={level}
-                  className={`card cursor-pointer transition-all hover:shadow-md ${
+                  className={`block w-full p-4 border border-gray-200 rounded-lg cursor-pointer transition-all hover:shadow-md ${
                     formData.urgency === level
-                      ? "ring-2 ring-blue-500 bg-blue-50"
+                      ? "ring-2 ring-blue-500 bg-blue-50 border-blue-300"
                       : "hover:bg-gray-50"
                   }`}
                 >
