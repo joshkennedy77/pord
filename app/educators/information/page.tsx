@@ -518,9 +518,9 @@ export default function EducatorsInformationPage() {
               ].map((option) => (
                 <label
                   key={option}
-                  className={`card cursor-pointer transition-all hover:shadow-md ${
+                  className={`block w-full p-4 border border-gray-200 rounded-lg cursor-pointer transition-all hover:shadow-md ${
                     formData.handsOnLearning === option
-                      ? "ring-2 ring-blue-500 bg-blue-50"
+                      ? "ring-2 ring-blue-500 bg-blue-50 border-blue-300"
                       : "hover:bg-gray-50"
                   }`}
                 >
