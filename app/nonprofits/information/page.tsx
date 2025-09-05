@@ -262,7 +262,7 @@ export default function NonprofitsInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Mission Statement</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="3"
+                rows={3}
                 placeholder="Describe your organization's mission and core values..."
                 value={formData.missionStatement}
                 onChange={(e) => handleInputChange("missionStatement", e.target.value)}
@@ -333,7 +333,7 @@ export default function NonprofitsInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Current Programs and Services</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="4"
+                rows={4}
                 placeholder="Describe your current programs, services, and initiatives..."
                 value={formData.currentPrograms}
                 onChange={(e) => handleInputChange("currentPrograms", e.target.value)}
@@ -344,7 +344,7 @@ export default function NonprofitsInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Success Metrics</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="3"
+                rows={3}
                 placeholder="How do you measure success? What metrics do you track?"
                 value={formData.successMetrics}
                 onChange={(e) => handleInputChange("successMetrics", e.target.value)}
@@ -390,7 +390,7 @@ export default function NonprofitsInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Project Description *</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="4"
+                rows={4}
                 placeholder="Describe your proposed project in detail..."
                 required
                 value={formData.projectDescription}
@@ -526,7 +526,7 @@ export default function NonprofitsInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Community Needs</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="3"
+                rows={3}
                 placeholder="What specific needs in your community would this project address?"
                 value={formData.communityNeeds}
                 onChange={(e) => handleInputChange("communityNeeds", e.target.value)}
@@ -537,7 +537,7 @@ export default function NonprofitsInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Expected Impact</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="3"
+                rows={3}
                 placeholder="What positive impact do you expect this project to have on the community?"
                 value={formData.expectedImpact}
                 onChange={(e) => handleInputChange("expectedImpact", e.target.value)}
@@ -579,7 +579,7 @@ export default function NonprofitsInformationPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Environmental Benefits</label>
                 <textarea
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  rows="3"
+                  rows={3}
                   placeholder="Environmental benefits..."
                   value={formData.environmentalBenefits}
                   onChange={(e) => handleInputChange("environmentalBenefits", e.target.value)}
@@ -590,7 +590,7 @@ export default function NonprofitsInformationPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Social Benefits</label>
                 <textarea
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  rows="3"
+                  rows={3}
                   placeholder="Social benefits..."
                   value={formData.socialBenefits}
                   onChange={(e) => handleInputChange("socialBenefits", e.target.value)}
@@ -601,7 +601,7 @@ export default function NonprofitsInformationPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Economic Benefits</label>
                 <textarea
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  rows="3"
+                  rows={3}
                   placeholder="Economic benefits..."
                   value={formData.economicBenefits}
                   onChange={(e) => handleInputChange("economicBenefits", e.target.value)}
@@ -648,7 +648,7 @@ export default function NonprofitsInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Previous Experience with 3D Printing</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="3"
+                rows={3}
                 placeholder="Describe any previous experience with 3D printing technology or similar innovations..."
                 value={formData.previousExperience}
                 onChange={(e) => handleInputChange("previousExperience", e.target.value)}
@@ -720,7 +720,7 @@ export default function NonprofitsInformationPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Volunteer Involvement</label>
                 <textarea
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  rows="3"
+                  rows={3}
                   placeholder="How do you envision volunteer involvement in this project?"
                   value={formData.volunteerInvolvement}
                   onChange={(e) => handleInputChange("volunteerInvolvement", e.target.value)}
@@ -731,7 +731,7 @@ export default function NonprofitsInformationPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Community Engagement</label>
                 <textarea
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  rows="3"
+                  rows={3}
                   placeholder="How will you engage the community in this project?"
                   value={formData.communityEngagement}
                   onChange={(e) => handleInputChange("communityEngagement", e.target.value)}
@@ -748,7 +748,7 @@ export default function NonprofitsInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Challenges and Concerns</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="4"
+                rows={4}
                 placeholder="What challenges or concerns do you have about this project or partnership?"
                 value={formData.challenges}
                 onChange={(e) => handleInputChange("challenges", e.target.value)}
@@ -759,7 +759,7 @@ export default function NonprofitsInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Questions for Our Team</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="3"
+                rows={3}
                 placeholder="Any specific questions about our technology, process, or partnership opportunities?"
                 value={formData.questions}
                 onChange={(e) => handleInputChange("questions", e.target.value)}
@@ -834,7 +834,7 @@ export default function NonprofitsInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Additional Information</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="4"
+                rows={4}
                 placeholder="Any additional information you'd like to share about your organization or project?"
                 value={formData.additionalInfo}
                 onChange={(e) => handleInputChange("additionalInfo", e.target.value)}

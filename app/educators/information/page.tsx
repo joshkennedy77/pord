@@ -116,12 +116,15 @@ export default function EducatorsInformationPage() {
   };
 
   const handleMultiSelectChange = (field: string, value: string) => {
-    setFormData(prev => ({
-      ...prev,
-      [field]: prev[field as keyof typeof prev].includes(value)
-        ? (prev[field as keyof typeof prev] as string[]).filter(item => item !== value)
-        : [...(prev[field as keyof typeof prev] as string[]), value]
-    }));
+    setFormData(prev => {
+      const currentValue = prev[field as keyof typeof prev] as string[];
+      return {
+        ...prev,
+        [field]: currentValue.includes(value)
+          ? currentValue.filter(item => item !== value)
+          : [...currentValue, value]
+      };
+    });
   };
 
   const handleSubmit = () => {
@@ -742,9 +745,9 @@ export default function EducatorsInformationPage() {
               ].map((level) => (
                 <label
                   key={level}
-                  className={`card cursor-pointer transition-all hover:shadow-md ${
+                  className={`block w-full p-4 border border-gray-200 rounded-lg cursor-pointer transition-all hover:shadow-md ${
                     formData.urgency === level
-                      ? "ring-2 ring-blue-500 bg-blue-50"
+                      ? "ring-2 ring-blue-500 bg-blue-50 border-blue-300"
                       : "hover:bg-gray-50"
                   }`}
                 >

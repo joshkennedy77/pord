@@ -373,7 +373,7 @@ export default function DevelopersInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Current Portfolio Description</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="4"
+                rows={4}
                 placeholder="Describe your current development portfolio and notable projects..."
                 value={formData.currentPortfolio}
                 onChange={(e) => handleInputChange("currentPortfolio", e.target.value)}
@@ -474,7 +474,7 @@ export default function DevelopersInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Project Description *</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="4"
+                rows={4}
                 placeholder="Describe your development project in detail..."
                 required
                 value={formData.projectDescription}
@@ -728,7 +728,7 @@ export default function DevelopersInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Market Strategy</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="3"
+                rows={3}
                 placeholder="Describe your market strategy and competitive advantages..."
                 value={formData.marketStrategy}
                 onChange={(e) => handleInputChange("marketStrategy", e.target.value)}
@@ -744,7 +744,7 @@ export default function DevelopersInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Challenges and Concerns</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="4"
+                rows={4}
                 placeholder="What challenges or concerns do you have about this project or 3D printing technology?"
                 value={formData.challenges}
                 onChange={(e) => handleInputChange("challenges", e.target.value)}
@@ -755,7 +755,7 @@ export default function DevelopersInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Questions for Our Team</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="3"
+                rows={3}
                 placeholder="Any specific questions about our technology, process, or partnership opportunities?"
                 value={formData.questions}
                 onChange={(e) => handleInputChange("questions", e.target.value)}
@@ -829,7 +829,7 @@ export default function DevelopersInformationPage() {
               <label className="block text-sm font-medium text-gray-700 mb-2">Additional Information</label>
               <textarea
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                rows="4"
+                rows={4}
                 placeholder="Any additional information you'd like to share about your company or project?"
                 value={formData.additionalInfo}
                 onChange={(e) => handleInputChange("additionalInfo", e.target.value)}

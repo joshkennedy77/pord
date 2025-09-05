@@ -62,7 +62,6 @@ export default function GovernmentInformationPage() {
     
     // Government Details
     governmentLevel: "",
-    department: "",
     projectTypes: [] as string[],
     budget: "",
     timeline: "",
