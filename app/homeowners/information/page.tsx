@@ -232,9 +232,9 @@ export default function HomeownersInformationPage() {
               {TIMELINES.map((timeline) => (
                 <label
                   key={timeline}
-                  className={`card cursor-pointer transition-all hover:shadow-md ${
+                  className={`block w-full p-4 border border-gray-200 rounded-lg cursor-pointer transition-all hover:shadow-md ${
                     formData.timeline === timeline
-                      ? "ring-2 ring-blue-500 bg-blue-50"
+                      ? "ring-2 ring-blue-500 bg-blue-50 border-blue-300"
                       : "hover:bg-gray-50"
                   }`}
                 >
@@ -294,9 +294,9 @@ export default function HomeownersInformationPage() {
               {["Very Important", "Somewhat Important", "Not Very Important", "Not Important"].map((level) => (
                 <label
                   key={level}
-                  className={`card cursor-pointer transition-all hover:shadow-md ${
+                  className={`block w-full p-4 border border-gray-200 rounded-lg cursor-pointer transition-all hover:shadow-md ${
                     formData.sustainability === level
-                      ? "ring-2 ring-blue-500 bg-blue-50"
+                      ? "ring-2 ring-blue-500 bg-blue-50 border-blue-300"
                       : "hover:bg-gray-50"
                   }`}
                 >
@@ -323,9 +323,9 @@ export default function HomeownersInformationPage() {
               {["Yes, very interested", "Yes, somewhat", "No, prefer standard designs", "Not sure"].map((option) => (
                 <label
                   key={option}
-                  className={`card cursor-pointer transition-all hover:shadow-md ${
+                  className={`block w-full p-4 border border-gray-200 rounded-lg cursor-pointer transition-all hover:shadow-md ${
                     formData.customDesign === option
-                      ? "ring-2 ring-blue-500 bg-blue-50"
+                      ? "ring-2 ring-blue-500 bg-blue-50 border-blue-300"
                       : "hover:bg-gray-50"
                   }`}
                 >
